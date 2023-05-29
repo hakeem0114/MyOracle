@@ -2,12 +2,9 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+The project calls the Geolocation API by IPify to get the requested IP info, then uses the result to update the outputs and map.
 
 ### Prerequisites
-
-This is an example of how to list things you need.
 
 1. IP Geolocation API by IPify (1000 requests max)
 https://geo.ipify.org/
@@ -19,32 +16,16 @@ https://react-leaflet.js.org/
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Download zip
+2. npm i to install packages & dependencies
+3. npm run dev to open on localhost
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+![home](./src/assets/design/active-states.jpg)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,8 +33,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Reach out by email at hakeem0114@gmail.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
