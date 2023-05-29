@@ -1,0 +1,2 @@
+Use vitest or connect to create-react-app with JEST.
+Problems using JEST with Vite.

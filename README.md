@@ -7,11 +7,15 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+This is an example of how to list things you need.
+
+1. IP Geolocation API by IPify (1000 requests max)
+https://geo.ipify.org/
+
+2. LeafletJS (Generate Map)
+https://leafletjs.com/
+https://react-leaflet.js.org/
+
 
 ### Installation
 
