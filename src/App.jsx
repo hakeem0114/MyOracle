@@ -20,7 +20,7 @@ function App() {
           />
         </div>
 
-          <article className='p-8' >
+          <box className='p-8' >
               <h1  className='text-5xl text-center text-white font-bolder mb-8' >
                       My Oracle
               </h1>
@@ -42,7 +42,29 @@ function App() {
                       <img src={searchArrow} alt="search arrow" />
                     </button>
               </form>
-          </article>
+          </box>
+
+          <box className='bg-white rounded-xl shadow p-8 m-12 flex justify-center gap-5 ' >
+              <div className='lg:border-r-l '>
+                  <h3>Ip Address </h3>
+                  <h2>192.23.174.101</h2>
+              </div>
+              <div>
+                  <h3>Ip Address </h3>
+                  <h2>192.23.174.101</h2>
+              </div>
+              <div>
+                  <h3>Ip Address </h3>
+                  <h2>192.23.174.101</h2>
+              </div>
+              <div>
+                  <h3>Ip Address </h3>
+                  <h2>192.23.174.101</h2>
+              </div>
+          </box>
+
+
+
       </section>
     </>
   )
