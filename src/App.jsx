@@ -4,25 +4,26 @@ import './App.css'
 //Image Imports
 import searchArrow from './assets/images/icon-arrow.svg'
 import backGround from './assets/images/pattern-bg-desktop.png'
+//import tabEye from './assets/tabEye.png'
 
 //Leaflet Imports
 import { MapContainer, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-import MarkerLocation from './MarkerLocation'
-
-
-
+import MarkerLocation from './components/MarkerLocation'
+  
 //React Imports
 import { useState,useEffect } from 'react'
 
-//console.log('test')
-//const apiKey = import.meta.env.VITE_API_KEY
-//const apiKey = 
+
+
+
 
 function App() {
 
-  //States
+  //UI update state
   const [address, setAddress] = useState(null)
+
+  //User States
   const [ipAddress, setIpAddress] = useState('')
 
 
@@ -30,7 +31,7 @@ function App() {
   useEffect(()=>{
     try{
       const getInitialData = async ()=>{
-        const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_wZjnR34rIco5CG811TnOtstknoZYX&ipAddress=8.8.8.8&domain=google.com`)
+        const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_0IBpVDPVarbyvMwnkrElkhmB4yey9&ipAddress=8.8.8.8`)
       
         const jsonData = await res.json();
         
@@ -71,10 +72,14 @@ function App() {
   //User API call (onSubmit)
   const handleUserAddress = async ()=>{
 
-    //Validate user's IP address & domain before using
+    
     // const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_wZjnR34rIco5CG811TnOtstknoZYX&ipAddress=${validateIPaddress?`{ipAddress}`:`${validateDomain}`?`${ipAddress}`:''}`)
+    //2nd geo account fix
+    //https://geo.ipify.org/api/v2/country,city?apiKey=at_0IBpVDPVarbyvMwnkrElkhmB4yey9&ipAddress=8.8.8.8
 
-    const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_wZjnR34rIco5CG811TnOtstknoZYX&${
+
+    //Validate user's IP address & domain before using
+    const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_0IBpVDPVarbyvMwnkrElkhmB4yey9&${
       validateIPaddress.test(ipAddress)
         ? `ipAddress=${ipAddress}`
         : validateDomain.test(ipAddress)
@@ -104,7 +109,7 @@ function App() {
 
   return (
     <>
-      <section>
+      <section  >
         <div className='absolute -z-20 ' >
             <img 
               src={backGround} 
@@ -117,9 +122,9 @@ function App() {
               <h1  className='text-5xl text-center text-white font-bolder mb-8 ' >
                       My Oracle
               </h1>
-              
+             
 
-              <form onSubmit={handleSubmit} className='flex justify-center max-w-xl mx-auto  sm:max-xl ' >
+              <form data-testid='id1' onSubmit={handleSubmit} className='flex justify-center max-w-xl mx-auto  sm:max-xl ' >
                     
                     <input 
                       className='w-full px-6 py-2  rounded-l-xl '
@@ -127,13 +132,13 @@ function App() {
                       type="text" 
                       name='ipAddress' 
                       id ='ipAddress' 
-                      placeholder='Query for IP address'
+                      placeholder='Query for IP/Domain'
                       value={ipAddress}
                       onChange={(e)=>setIpAddress(e.target.value)}
                       required
                     />
 
-                    <button type='submit' className=' bg-black  hover:opacity-50 px-6 py-3.5 rounded-r-xl' >
+                    <button aria-label="button-name" type='submit' className=' bg-black  hover:opacity-50 px-6 py-3.5 rounded-r-xl' >
                       <img src={searchArrow} alt="search arrow" />
                     </button>
               </form>

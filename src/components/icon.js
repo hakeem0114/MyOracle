@@ -1,6 +1,6 @@
 //Map Icon Import
 import L from "leaflet"
-import icon from './assets/images/icon-location.svg'
+import icon from '../assets/images/icon-location.svg'
 
 export default L.icon({
     iconSize: [33,41],

@@ -1,3 +1,0 @@
-1. Upload the rest of test to github
-2. Change header to animated eye
-3. Clean up folder paths

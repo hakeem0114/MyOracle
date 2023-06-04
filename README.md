@@ -1,18 +1,19 @@
-## STILL IN PROGRESS
-
 
 <!-- GETTING STARTED -->
 ## Getting Started 
 
-The project calls the Geolocation API by IPify to get the requested IP info, then uses the result to update the outputs and map.
+The project calls the Geolocation API by IPify to get the requested IP info, then uses the result to update the outputs and map. 
 
-Using vanilla & Tailwind CSS for stying with regex for validation. Styled components will used in my next project as I learn more frameworks.
+Using vanilla & Tailwind CSS for styling, with regex strings for validation parsing. Styled components will used in my next project as I learn more frameworks.
+
+Tested with Vitest & MSW API mocking
 
 It was inspired by a front-end mentor challenge.
 
 ### Prerequisites
 
 1. IP Geolocation API by IPify (1000 requests max)
+PLEASE BE MINDFUL OF YOUR NUMBER OF REQUESTS
 https://geo.ipify.org/
 
 2. LeafletJS (Generate Map)
@@ -29,7 +30,7 @@ https://react-leaflet.js.org/
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- USAGE EXAMPLES -->
+<!-- PREVIEW -->
 ## Usage
 ![home](./src/assets/MyOracle.png)
 
