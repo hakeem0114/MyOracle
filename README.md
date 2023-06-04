@@ -26,6 +26,7 @@ https://react-leaflet.js.org/
 1. Download zip
 2. npm i to install packages & dependencies
 3. npm run dev to open on localhost
+4. npm run test on a seperate terminal to load vite tests
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
