@@ -1,4 +1,4 @@
-## STILL IN PROGRESS (UI first before API)
+## STILL IN PROGRESS
 
 
 <!-- GETTING STARTED -->
@@ -31,7 +31,7 @@ https://react-leaflet.js.org/
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-![home](./src/assets/design/active-states.jpg)
+![home](./src/assets/MyOracle.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
