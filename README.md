@@ -30,8 +30,8 @@ https://react-leaflet.js.org/
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- PREVIEW -->
-## Usage
+
+## Preview
 ![home](./src/assets/MyOracle.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
