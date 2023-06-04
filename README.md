@@ -6,9 +6,9 @@
 
 The project calls the Geolocation API by IPify to get the requested IP info, then uses the result to update the outputs and map.
 
-Using vanilla & Tailwind CSS for stying. Styled components will used in my next project as I learn more frameworks.
+Using vanilla & Tailwind CSS for stying with regex for validation. Styled components will used in my next project as I learn more frameworks.
 
-It was inspired by a front-end mentor challenge with more modifications & tests
+It was inspired by a front-end mentor challenge.
 
 ### Prerequisites
 
