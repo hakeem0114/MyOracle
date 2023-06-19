@@ -13,7 +13,6 @@ It was inspired by a front-end mentor challenge.
 ### Prerequisites
 
 1. IP Geolocation API by IPify (1000 requests max)
-PLEASE BE MINDFUL OF YOUR NUMBER OF REQUESTS
 https://geo.ipify.org/
 
 2. LeafletJS (Generate Map)
